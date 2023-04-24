@@ -1,0 +1,2 @@
+docker build --build-arg API_KEY=$(grep API_KEY .env | cut -d '=' -f2) -t ws_chatgpt .
+docker run -p 8000:8000 ws_chatgpt
